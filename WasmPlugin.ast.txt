@@ -1,0 +1,2273 @@
+*ast.File{
+	Filename: "cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue"
+	Decls: []ast.Decl{
+		*ast.Package{
+			PackagePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:3:1")
+			Name: *ast.Ident{
+				NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:3:9")
+				Name: "v1alpha1"
+			}
+		}
+		*ast.ImportDecl{
+			Import: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:5:1")
+			Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:5:8")
+			Specs: []*ast.ImportSpec{
+				*ast.ImportSpec{
+					Name: nil
+					Path: *ast.BasicLit{
+						ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:6:2")
+						Kind: token.Token("STRING")
+						Value: "\"strings\""
+					}
+					EndPos: token.Pos("-")
+				}
+				*ast.ImportSpec{
+					Name: nil
+					Path: *ast.BasicLit{
+						ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:7:2")
+						Kind: token.Token("STRING")
+						Value: "\"list\""
+					}
+					EndPos: token.Pos("-")
+				}
+			}
+			Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:8:1")
+		}
+		*ast.EmbedDecl{
+			Expr: *ast.Ident{
+				NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:10:1")
+				Name: "_#def"
+			}
+		}
+		*ast.Field{
+			Label: *ast.Ident{
+				NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:11:1")
+				Name: "_#def"
+			}
+			Optional: token.Pos("-")
+			Constraint: token.Token("ILLEGAL")
+			TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:11:6")
+			Token: token.Token(":")
+			Value: *ast.StructLit{
+				Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:11:8")
+				Elts: []ast.Decl{
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:15:2")
+							Name: "spec"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:15:6")
+						Constraint: token.Token("!")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:15:7")
+						Token: token.Token(":")
+						Value: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:15:14")
+							Name: "#WasmPluginSpec"
+						}
+						Attrs: []*ast.Attribute{
+						}
+						Comments: []*ast.CommentGroup{
+							*ast.CommentGroup{
+								Doc: true
+								Line: false
+								Position: 0
+								List: []*ast.Comment{
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:12:2")
+										Text: "// Extend the functionality provided by the Istio proxy through"
+									}
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:13:2")
+										Text: "// WebAssembly filters. See more details at:"
+									}
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:14:2")
+										Text: "// https://istio.io/docs/reference/config/proxy_extensions/wasm-plugin.html"
+									}
+								}
+							}
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:16:2")
+							Name: "apiVersion"
+						}
+						Optional: token.Pos("-")
+						Constraint: token.Token("ILLEGAL")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:16:12")
+						Token: token.Token(":")
+						Value: *ast.BasicLit{
+							ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:16:14")
+							Kind: token.Token("STRING")
+							Value: "\"extensions.istio.io/v1alpha1\""
+						}
+						Attrs: []*ast.Attribute{
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:17:2")
+							Name: "kind"
+						}
+						Optional: token.Pos("-")
+						Constraint: token.Token("ILLEGAL")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:17:6")
+						Token: token.Token(":")
+						Value: *ast.BasicLit{
+							ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:17:14")
+							Kind: token.Token("STRING")
+							Value: "\"WasmPlugin\""
+						}
+						Attrs: []*ast.Attribute{
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:18:2")
+							Name: "metadata"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:18:10")
+						Constraint: token.Token("!")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:18:11")
+						Token: token.Token(":")
+						Value: *ast.StructLit{
+							Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:18:13")
+							Elts: []ast.Decl{
+								*ast.Field{
+									Label: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:3")
+										Name: "name"
+									}
+									Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:7")
+									Constraint: token.Token("!")
+									TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:8")
+									Token: token.Token(":")
+									Value: *ast.BinaryExpr{
+										X: *ast.BinaryExpr{
+											X: *ast.CallExpr{
+												Fun: *ast.SelectorExpr{
+													X: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:10")
+														Name: "strings"
+													}
+													Sel: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:18")
+														Name: "MaxRunes"
+													}
+												}
+												Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:26")
+												Args: []ast.Expr{
+													*ast.BasicLit{
+														ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:27")
+														Kind: token.Token("INT")
+														Value: "253"
+													}
+												}
+												Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:30")
+											}
+											OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:32")
+											Op: token.Token("&")
+											Y: *ast.CallExpr{
+												Fun: *ast.SelectorExpr{
+													X: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:34")
+														Name: "strings"
+													}
+													Sel: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:42")
+														Name: "MinRunes"
+													}
+												}
+												Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:50")
+												Args: []ast.Expr{
+													*ast.BasicLit{
+														ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:51")
+														Kind: token.Token("INT")
+														Value: "1"
+													}
+												}
+												Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:52")
+											}
+										}
+										OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:54")
+										Op: token.Token("&")
+										Y: *ast.StructLit{
+											Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:19:56")
+											Elts: []ast.Decl{
+												*ast.EmbedDecl{
+													Expr: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:20:4")
+														Name: "string"
+													}
+												}
+											}
+											Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:21:3")
+										}
+									}
+									Attrs: []*ast.Attribute{
+									}
+								}
+								*ast.Field{
+									Label: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:3")
+										Name: "namespace"
+									}
+									Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:12")
+									Constraint: token.Token("!")
+									TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:13")
+									Token: token.Token(":")
+									Value: *ast.BinaryExpr{
+										X: *ast.BinaryExpr{
+											X: *ast.CallExpr{
+												Fun: *ast.SelectorExpr{
+													X: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:15")
+														Name: "strings"
+													}
+													Sel: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:23")
+														Name: "MaxRunes"
+													}
+												}
+												Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:31")
+												Args: []ast.Expr{
+													*ast.BasicLit{
+														ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:32")
+														Kind: token.Token("INT")
+														Value: "63"
+													}
+												}
+												Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:34")
+											}
+											OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:36")
+											Op: token.Token("&")
+											Y: *ast.CallExpr{
+												Fun: *ast.SelectorExpr{
+													X: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:38")
+														Name: "strings"
+													}
+													Sel: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:46")
+														Name: "MinRunes"
+													}
+												}
+												Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:54")
+												Args: []ast.Expr{
+													*ast.BasicLit{
+														ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:55")
+														Kind: token.Token("INT")
+														Value: "1"
+													}
+												}
+												Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:56")
+											}
+										}
+										OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:58")
+										Op: token.Token("&")
+										Y: *ast.StructLit{
+											Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:22:60")
+											Elts: []ast.Decl{
+												*ast.EmbedDecl{
+													Expr: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:23:4")
+														Name: "string"
+													}
+												}
+											}
+											Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:24:3")
+										}
+									}
+									Attrs: []*ast.Attribute{
+									}
+								}
+								*ast.Field{
+									Label: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:25:3")
+										Name: "labels"
+									}
+									Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:25:9")
+									Constraint: token.Token("?")
+									TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:25:10")
+									Token: token.Token(":")
+									Value: *ast.StructLit{
+										Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:25:12")
+										Elts: []ast.Decl{
+											*ast.Field{
+												Label: *ast.ListLit{
+													Lbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:26:4")
+													Elts: []ast.Expr{
+														*ast.Ident{
+															NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:26:5")
+															Name: "string"
+														}
+													}
+													Rbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:26:11")
+												}
+												Optional: token.Pos("-")
+												Constraint: token.Token("ILLEGAL")
+												TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:26:12")
+												Token: token.Token(":")
+												Value: *ast.Ident{
+													NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:26:14")
+													Name: "string"
+												}
+												Attrs: []*ast.Attribute{
+												}
+											}
+										}
+										Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:27:3")
+									}
+									Attrs: []*ast.Attribute{
+									}
+								}
+								*ast.Field{
+									Label: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:28:3")
+										Name: "annotations"
+									}
+									Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:28:14")
+									Constraint: token.Token("?")
+									TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:28:15")
+									Token: token.Token(":")
+									Value: *ast.StructLit{
+										Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:28:17")
+										Elts: []ast.Decl{
+											*ast.Field{
+												Label: *ast.ListLit{
+													Lbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:29:4")
+													Elts: []ast.Expr{
+														*ast.Ident{
+															NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:29:5")
+															Name: "string"
+														}
+													}
+													Rbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:29:11")
+												}
+												Optional: token.Pos("-")
+												Constraint: token.Token("ILLEGAL")
+												TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:29:12")
+												Token: token.Token(":")
+												Value: *ast.Ident{
+													NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:29:14")
+													Name: "string"
+												}
+												Attrs: []*ast.Attribute{
+												}
+											}
+										}
+										Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:30:3")
+									}
+									Attrs: []*ast.Attribute{
+									}
+								}
+							}
+							Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:31:2")
+						}
+						Attrs: []*ast.Attribute{
+						}
+					}
+				}
+				Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:32:1")
+			}
+			Attrs: []*ast.Attribute{
+			}
+		}
+		*ast.Field{
+			Label: *ast.Ident{
+				NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:37:1")
+				Name: "#WasmPluginSpec"
+			}
+			Optional: token.Pos("-")
+			Constraint: token.Token("ILLEGAL")
+			TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:37:16")
+			Token: token.Token(":")
+			Value: *ast.StructLit{
+				Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:37:18")
+				Elts: []ast.Decl{
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:40:2")
+							Name: "failStrategy"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:40:14")
+						Constraint: token.Token("?")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:40:15")
+						Token: token.Token(":")
+						Value: *ast.BinaryExpr{
+							X: *ast.ParenExpr{
+								Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:40:17")
+								X: *ast.BinaryExpr{
+									X: *ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:40:18")
+										Kind: token.Token("STRING")
+										Value: "\"FAIL_CLOSE\""
+									}
+									OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:40:31")
+									Op: token.Token("|")
+									Y: *ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:40:33")
+										Kind: token.Token("STRING")
+										Value: "\"FAIL_OPEN\""
+									}
+								}
+								Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:40:44")
+							}
+							OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:40:46")
+							Op: token.Token("&")
+							Y: *ast.ParenExpr{
+								Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:40:48")
+								X: *ast.BinaryExpr{
+									X: *ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:40:49")
+										Kind: token.Token("STRING")
+										Value: "\"FAIL_CLOSE\""
+									}
+									OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:40:62")
+									Op: token.Token("|")
+									Y: *ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:40:64")
+										Kind: token.Token("STRING")
+										Value: "\"FAIL_OPEN\""
+									}
+								}
+								Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:40:75")
+							}
+						}
+						Attrs: []*ast.Attribute{
+						}
+						Comments: []*ast.CommentGroup{
+							*ast.CommentGroup{
+								Doc: true
+								Line: false
+								Position: 0
+								List: []*ast.Comment{
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:38:2")
+										Text: "// Specifies the failure behavior for the plugin due to fatal"
+									}
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:39:2")
+										Text: "// errors."
+									}
+								}
+							}
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:2")
+							Name: "imagePullPolicy"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:17")
+						Constraint: token.Token("?")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:18")
+						Token: token.Token(":")
+						Value: *ast.BinaryExpr{
+							X: *ast.ParenExpr{
+								Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:20")
+								X: *ast.BinaryExpr{
+									X: *ast.BinaryExpr{
+										X: *ast.BasicLit{
+											ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:21")
+											Kind: token.Token("STRING")
+											Value: "\"UNSPECIFIED_POLICY\""
+										}
+										OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:42")
+										Op: token.Token("|")
+										Y: *ast.BasicLit{
+											ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:44")
+											Kind: token.Token("STRING")
+											Value: "\"IfNotPresent\""
+										}
+									}
+									OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:59")
+									Op: token.Token("|")
+									Y: *ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:61")
+										Kind: token.Token("STRING")
+										Value: "\"Always\""
+									}
+								}
+								Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:69")
+							}
+							OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:71")
+							Op: token.Token("&")
+							Y: *ast.ParenExpr{
+								Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:73")
+								X: *ast.BinaryExpr{
+									X: *ast.BinaryExpr{
+										X: *ast.BasicLit{
+											ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:74")
+											Kind: token.Token("STRING")
+											Value: "\"UNSPECIFIED_POLICY\""
+										}
+										OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:95")
+										Op: token.Token("|")
+										Y: *ast.BasicLit{
+											ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:97")
+											Kind: token.Token("STRING")
+											Value: "\"IfNotPresent\""
+										}
+									}
+									OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:112")
+									Op: token.Token("|")
+									Y: *ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:114")
+										Kind: token.Token("STRING")
+										Value: "\"Always\""
+									}
+								}
+								Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:44:122")
+							}
+						}
+						Attrs: []*ast.Attribute{
+						}
+						Comments: []*ast.CommentGroup{
+							*ast.CommentGroup{
+								Doc: true
+								Line: false
+								Position: 0
+								List: []*ast.Comment{
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:42:2")
+										Text: "// The pull behaviour to be applied when fetching Wasm module by"
+									}
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:43:2")
+										Text: "// either OCI image or http/https."
+									}
+								}
+							}
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:2")
+							Name: "imagePullSecret"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:17")
+						Constraint: token.Token("?")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:18")
+						Token: token.Token(":")
+						Value: *ast.BinaryExpr{
+							X: *ast.BinaryExpr{
+								X: *ast.BinaryExpr{
+									X: *ast.CallExpr{
+										Fun: *ast.SelectorExpr{
+											X: *ast.Ident{
+												NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:20")
+												Name: "strings"
+											}
+											Sel: *ast.Ident{
+												NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:28")
+												Name: "MaxRunes"
+											}
+										}
+										Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:36")
+										Args: []ast.Expr{
+											*ast.BasicLit{
+												ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:37")
+												Kind: token.Token("INT")
+												Value: "253"
+											}
+										}
+										Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:40")
+									}
+									OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:42")
+									Op: token.Token("&")
+									Y: *ast.CallExpr{
+										Fun: *ast.SelectorExpr{
+											X: *ast.Ident{
+												NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:44")
+												Name: "strings"
+											}
+											Sel: *ast.Ident{
+												NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:52")
+												Name: "MinRunes"
+											}
+										}
+										Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:60")
+										Args: []ast.Expr{
+											*ast.BasicLit{
+												ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:61")
+												Kind: token.Token("INT")
+												Value: "1"
+											}
+										}
+										Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:62")
+									}
+								}
+								OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:64")
+								Op: token.Token("&")
+								Y: *ast.CallExpr{
+									Fun: *ast.SelectorExpr{
+										X: *ast.Ident{
+											NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:66")
+											Name: "strings"
+										}
+										Sel: *ast.Ident{
+											NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:74")
+											Name: "MaxRunes"
+										}
+									}
+									Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:82")
+									Args: []ast.Expr{
+										*ast.BasicLit{
+											ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:83")
+											Kind: token.Token("INT")
+											Value: "253"
+										}
+									}
+									Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:86")
+								}
+							}
+							OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:88")
+							Op: token.Token("&")
+							Y: *ast.CallExpr{
+								Fun: *ast.SelectorExpr{
+									X: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:90")
+										Name: "strings"
+									}
+									Sel: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:98")
+										Name: "MinRunes"
+									}
+								}
+								Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:106")
+								Args: []ast.Expr{
+									*ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:107")
+										Kind: token.Token("INT")
+										Value: "1"
+									}
+								}
+								Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:47:108")
+							}
+						}
+						Attrs: []*ast.Attribute{
+						}
+						Comments: []*ast.CommentGroup{
+							*ast.CommentGroup{
+								Doc: true
+								Line: false
+								Position: 0
+								List: []*ast.Comment{
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:46:2")
+										Text: "// Credentials to use for OCI image pulling."
+									}
+								}
+							}
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:51:2")
+							Name: "match"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:51:7")
+						Constraint: token.Token("?")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:51:8")
+						Token: token.Token(":")
+						Value: *ast.BinaryExpr{
+							X: *ast.ListLit{
+								Lbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:51:10")
+								Elts: []ast.Expr{
+									*ast.Ellipsis{
+										Ellipsis: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:51:11")
+										Type: *ast.StructLit{
+											Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:51:14")
+											Elts: []ast.Decl{
+												*ast.Field{
+													Label: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:53:3")
+														Name: "mode"
+													}
+													Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:53:7")
+													Constraint: token.Token("?")
+													TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:53:8")
+													Token: token.Token(":")
+													Value: *ast.BinaryExpr{
+														X: *ast.BinaryExpr{
+															X: *ast.BinaryExpr{
+																X: *ast.BasicLit{
+																	ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:53:10")
+																	Kind: token.Token("STRING")
+																	Value: "\"UNDEFINED\""
+																}
+																OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:53:22")
+																Op: token.Token("|")
+																Y: *ast.BasicLit{
+																	ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:53:24")
+																	Kind: token.Token("STRING")
+																	Value: "\"CLIENT\""
+																}
+															}
+															OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:53:33")
+															Op: token.Token("|")
+															Y: *ast.BasicLit{
+																ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:53:35")
+																Kind: token.Token("STRING")
+																Value: "\"SERVER\""
+															}
+														}
+														OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:53:44")
+														Op: token.Token("|")
+														Y: *ast.BasicLit{
+															ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:53:46")
+															Kind: token.Token("STRING")
+															Value: "\"CLIENT_AND_SERVER\""
+														}
+													}
+													Attrs: []*ast.Attribute{
+													}
+													Comments: []*ast.CommentGroup{
+														*ast.CommentGroup{
+															Doc: true
+															Line: false
+															Position: 0
+															List: []*ast.Comment{
+																*ast.Comment{
+																	Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:52:3")
+																	Text: "// Criteria for selecting traffic by their direction."
+																}
+															}
+														}
+													}
+												}
+												*ast.Field{
+													Label: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:56:3")
+														Name: "ports"
+													}
+													Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:56:8")
+													Constraint: token.Token("?")
+													TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:56:9")
+													Token: token.Token(":")
+													Value: *ast.ListLit{
+														Lbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:56:11")
+														Elts: []ast.Expr{
+															*ast.Ellipsis{
+																Ellipsis: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:56:12")
+																Type: *ast.StructLit{
+																	Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:56:15")
+																	Elts: []ast.Decl{
+																		*ast.Field{
+																			Label: *ast.Ident{
+																				NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:57:4")
+																				Name: "number"
+																			}
+																			Optional: token.Pos("-")
+																			Constraint: token.Token("ILLEGAL")
+																			TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:57:10")
+																			Token: token.Token(":")
+																			Value: *ast.BinaryExpr{
+																				X: *ast.Ident{
+																					NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:57:12")
+																					Name: "uint16"
+																				}
+																				OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:57:19")
+																				Op: token.Token("&")
+																				Y: *ast.UnaryExpr{
+																					OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:57:21")
+																					Op: token.Token(">=")
+																					X: *ast.BasicLit{
+																						ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:57:23")
+																						Kind: token.Token("INT")
+																						Value: "1"
+																					}
+																				}
+																			}
+																			Attrs: []*ast.Attribute{
+																			}
+																		}
+																	}
+																	Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:58:3")
+																}
+															}
+														}
+														Rbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:58:4")
+													}
+													Attrs: []*ast.Attribute{
+													}
+													Comments: []*ast.CommentGroup{
+														*ast.CommentGroup{
+															Doc: true
+															Line: false
+															Position: 0
+															List: []*ast.Comment{
+																*ast.Comment{
+																	Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:55:3")
+																	Text: "// Criteria for selecting traffic by their destination port."
+																}
+															}
+														}
+													}
+												}
+											}
+											Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:59:2")
+										}
+									}
+								}
+								Rbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:59:3")
+							}
+							OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:59:5")
+							Op: token.Token("&")
+							Y: *ast.ListLit{
+								Lbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:59:7")
+								Elts: []ast.Expr{
+									*ast.Ellipsis{
+										Ellipsis: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:59:8")
+										Type: *ast.StructLit{
+											Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:59:11")
+											Elts: []ast.Decl{
+												*ast.Field{
+													Label: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:61:3")
+														Name: "mode"
+													}
+													Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:61:7")
+													Constraint: token.Token("?")
+													TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:61:8")
+													Token: token.Token(":")
+													Value: *ast.BinaryExpr{
+														X: *ast.BinaryExpr{
+															X: *ast.BinaryExpr{
+																X: *ast.BasicLit{
+																	ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:61:10")
+																	Kind: token.Token("STRING")
+																	Value: "\"UNDEFINED\""
+																}
+																OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:61:22")
+																Op: token.Token("|")
+																Y: *ast.BasicLit{
+																	ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:61:24")
+																	Kind: token.Token("STRING")
+																	Value: "\"CLIENT\""
+																}
+															}
+															OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:61:33")
+															Op: token.Token("|")
+															Y: *ast.BasicLit{
+																ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:61:35")
+																Kind: token.Token("STRING")
+																Value: "\"SERVER\""
+															}
+														}
+														OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:61:44")
+														Op: token.Token("|")
+														Y: *ast.BasicLit{
+															ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:61:46")
+															Kind: token.Token("STRING")
+															Value: "\"CLIENT_AND_SERVER\""
+														}
+													}
+													Attrs: []*ast.Attribute{
+													}
+													Comments: []*ast.CommentGroup{
+														*ast.CommentGroup{
+															Doc: true
+															Line: false
+															Position: 0
+															List: []*ast.Comment{
+																*ast.Comment{
+																	Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:60:3")
+																	Text: "// Criteria for selecting traffic by their direction."
+																}
+															}
+														}
+													}
+												}
+												*ast.Field{
+													Label: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:64:3")
+														Name: "ports"
+													}
+													Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:64:8")
+													Constraint: token.Token("?")
+													TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:64:9")
+													Token: token.Token(":")
+													Value: *ast.ListLit{
+														Lbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:64:11")
+														Elts: []ast.Expr{
+															*ast.Ellipsis{
+																Ellipsis: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:64:12")
+																Type: *ast.StructLit{
+																	Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:64:15")
+																	Elts: []ast.Decl{
+																		*ast.Field{
+																			Label: *ast.Ident{
+																				NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:65:4")
+																				Name: "number"
+																			}
+																			Optional: token.Pos("-")
+																			Constraint: token.Token("ILLEGAL")
+																			TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:65:10")
+																			Token: token.Token(":")
+																			Value: *ast.BinaryExpr{
+																				X: *ast.Ident{
+																					NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:65:12")
+																					Name: "uint16"
+																				}
+																				OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:65:19")
+																				Op: token.Token("&")
+																				Y: *ast.UnaryExpr{
+																					OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:65:21")
+																					Op: token.Token(">=")
+																					X: *ast.BasicLit{
+																						ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:65:23")
+																						Kind: token.Token("INT")
+																						Value: "1"
+																					}
+																				}
+																			}
+																			Attrs: []*ast.Attribute{
+																			}
+																		}
+																	}
+																	Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:66:3")
+																}
+															}
+														}
+														Rbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:66:4")
+													}
+													Attrs: []*ast.Attribute{
+													}
+													Comments: []*ast.CommentGroup{
+														*ast.CommentGroup{
+															Doc: true
+															Line: false
+															Position: 0
+															List: []*ast.Comment{
+																*ast.Comment{
+																	Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:63:3")
+																	Text: "// Criteria for selecting traffic by their destination port."
+																}
+															}
+														}
+													}
+												}
+											}
+											Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:67:2")
+										}
+									}
+								}
+								Rbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:67:3")
+							}
+						}
+						Attrs: []*ast.Attribute{
+						}
+						Comments: []*ast.CommentGroup{
+							*ast.CommentGroup{
+								Doc: true
+								Line: false
+								Position: 0
+								List: []*ast.Comment{
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:49:2")
+										Text: "// Specifies the criteria to determine which traffic is passed to"
+									}
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:50:2")
+										Text: "// WasmPlugin."
+									}
+								}
+							}
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:2")
+							Name: "phase"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:7")
+						Constraint: token.Token("?")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:8")
+						Token: token.Token(":")
+						Value: *ast.BinaryExpr{
+							X: *ast.ParenExpr{
+								Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:10")
+								X: *ast.BinaryExpr{
+									X: *ast.BinaryExpr{
+										X: *ast.BinaryExpr{
+											X: *ast.BasicLit{
+												ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:11")
+												Kind: token.Token("STRING")
+												Value: "\"UNSPECIFIED_PHASE\""
+											}
+											OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:31")
+											Op: token.Token("|")
+											Y: *ast.BasicLit{
+												ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:33")
+												Kind: token.Token("STRING")
+												Value: "\"AUTHN\""
+											}
+										}
+										OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:41")
+										Op: token.Token("|")
+										Y: *ast.BasicLit{
+											ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:43")
+											Kind: token.Token("STRING")
+											Value: "\"AUTHZ\""
+										}
+									}
+									OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:51")
+									Op: token.Token("|")
+									Y: *ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:53")
+										Kind: token.Token("STRING")
+										Value: "\"STATS\""
+									}
+								}
+								Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:60")
+							}
+							OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:62")
+							Op: token.Token("&")
+							Y: *ast.ParenExpr{
+								Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:64")
+								X: *ast.BinaryExpr{
+									X: *ast.BinaryExpr{
+										X: *ast.BinaryExpr{
+											X: *ast.BasicLit{
+												ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:65")
+												Kind: token.Token("STRING")
+												Value: "\"UNSPECIFIED_PHASE\""
+											}
+											OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:85")
+											Op: token.Token("|")
+											Y: *ast.BasicLit{
+												ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:87")
+												Kind: token.Token("STRING")
+												Value: "\"AUTHN\""
+											}
+										}
+										OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:95")
+										Op: token.Token("|")
+										Y: *ast.BasicLit{
+											ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:97")
+											Kind: token.Token("STRING")
+											Value: "\"AUTHZ\""
+										}
+									}
+									OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:105")
+									Op: token.Token("|")
+									Y: *ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:107")
+										Kind: token.Token("STRING")
+										Value: "\"STATS\""
+									}
+								}
+								Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:71:114")
+							}
+						}
+						Attrs: []*ast.Attribute{
+						}
+						Comments: []*ast.CommentGroup{
+							*ast.CommentGroup{
+								Doc: true
+								Line: false
+								Position: 0
+								List: []*ast.Comment{
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:69:2")
+										Text: "// Determines where in the filter chain this `WasmPlugin` is to be"
+									}
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:70:2")
+										Text: "// injected."
+									}
+								}
+							}
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:74:2")
+							Name: "pluginConfig"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:74:14")
+						Constraint: token.Token("?")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:74:15")
+						Token: token.Token(":")
+						Value: *ast.StructLit{
+							Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:74:17")
+							Elts: []ast.Decl{
+							}
+							Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:74:18")
+						}
+						Attrs: []*ast.Attribute{
+						}
+						Comments: []*ast.CommentGroup{
+							*ast.CommentGroup{
+								Doc: true
+								Line: false
+								Position: 0
+								List: []*ast.Comment{
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:73:2")
+										Text: "// The configuration that will be passed on to the plugin."
+									}
+								}
+							}
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:2")
+							Name: "pluginName"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:12")
+						Constraint: token.Token("?")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:13")
+						Token: token.Token(":")
+						Value: *ast.BinaryExpr{
+							X: *ast.BinaryExpr{
+								X: *ast.BinaryExpr{
+									X: *ast.CallExpr{
+										Fun: *ast.SelectorExpr{
+											X: *ast.Ident{
+												NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:15")
+												Name: "strings"
+											}
+											Sel: *ast.Ident{
+												NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:23")
+												Name: "MaxRunes"
+											}
+										}
+										Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:31")
+										Args: []ast.Expr{
+											*ast.BasicLit{
+												ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:32")
+												Kind: token.Token("INT")
+												Value: "256"
+											}
+										}
+										Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:35")
+									}
+									OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:37")
+									Op: token.Token("&")
+									Y: *ast.CallExpr{
+										Fun: *ast.SelectorExpr{
+											X: *ast.Ident{
+												NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:39")
+												Name: "strings"
+											}
+											Sel: *ast.Ident{
+												NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:47")
+												Name: "MinRunes"
+											}
+										}
+										Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:55")
+										Args: []ast.Expr{
+											*ast.BasicLit{
+												ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:56")
+												Kind: token.Token("INT")
+												Value: "1"
+											}
+										}
+										Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:57")
+									}
+								}
+								OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:59")
+								Op: token.Token("&")
+								Y: *ast.CallExpr{
+									Fun: *ast.SelectorExpr{
+										X: *ast.Ident{
+											NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:61")
+											Name: "strings"
+										}
+										Sel: *ast.Ident{
+											NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:69")
+											Name: "MaxRunes"
+										}
+									}
+									Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:77")
+									Args: []ast.Expr{
+										*ast.BasicLit{
+											ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:78")
+											Kind: token.Token("INT")
+											Value: "256"
+										}
+									}
+									Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:81")
+								}
+							}
+							OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:83")
+							Op: token.Token("&")
+							Y: *ast.CallExpr{
+								Fun: *ast.SelectorExpr{
+									X: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:85")
+										Name: "strings"
+									}
+									Sel: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:93")
+										Name: "MinRunes"
+									}
+								}
+								Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:101")
+								Args: []ast.Expr{
+									*ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:102")
+										Kind: token.Token("INT")
+										Value: "1"
+									}
+								}
+								Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:78:103")
+							}
+						}
+						Attrs: []*ast.Attribute{
+						}
+						Comments: []*ast.CommentGroup{
+							*ast.CommentGroup{
+								Doc: true
+								Line: false
+								Position: 0
+								List: []*ast.Comment{
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:76:2")
+										Text: "// The plugin name to be used in the Envoy configuration (used to"
+									}
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:77:2")
+										Text: "// be called `rootID`)."
+									}
+								}
+							}
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:81:2")
+							Name: "priority"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:81:10")
+						Constraint: token.Token("?")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:81:11")
+						Token: token.Token(":")
+						Value: *ast.BinaryExpr{
+							X: *ast.ParenExpr{
+								Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:81:13")
+								X: *ast.BinaryExpr{
+									X: *ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:81:14")
+										Kind: token.Token("null")
+										Value: "null"
+									}
+									OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:81:19")
+									Op: token.Token("|")
+									Y: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:81:21")
+										Name: "int"
+									}
+								}
+								Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:81:24")
+							}
+							OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:81:26")
+							Op: token.Token("&")
+							Y: *ast.ParenExpr{
+								Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:81:28")
+								X: *ast.BinaryExpr{
+									X: *ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:81:29")
+										Kind: token.Token("null")
+										Value: "null"
+									}
+									OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:81:34")
+									Op: token.Token("|")
+									Y: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:81:36")
+										Name: "int"
+									}
+								}
+								Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:81:39")
+							}
+						}
+						Attrs: []*ast.Attribute{
+						}
+						Comments: []*ast.CommentGroup{
+							*ast.CommentGroup{
+								Doc: true
+								Line: false
+								Position: 0
+								List: []*ast.Comment{
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:80:2")
+										Text: "// Determines ordering of `WasmPlugins` in the same `phase`."
+									}
+								}
+							}
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:82:2")
+							Name: "selector"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:82:10")
+						Constraint: token.Token("?")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:82:11")
+						Token: token.Token(":")
+						Value: *ast.StructLit{
+							Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:82:13")
+							Elts: []ast.Decl{
+								*ast.Field{
+									Label: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:85:3")
+										Name: "matchLabels"
+									}
+									Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:85:14")
+									Constraint: token.Token("?")
+									TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:85:15")
+									Token: token.Token(":")
+									Value: *ast.StructLit{
+										Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:85:17")
+										Elts: []ast.Decl{
+											*ast.EmbedDecl{
+												Expr: *ast.StructLit{
+													Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:86:4")
+													Elts: []ast.Decl{
+														*ast.Field{
+															Label: *ast.ListLit{
+																Lbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:87:5")
+																Elts: []ast.Expr{
+																	*ast.Ident{
+																		NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:87:6")
+																		Name: "string"
+																	}
+																}
+																Rbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:87:12")
+															}
+															Optional: token.Pos("-")
+															Constraint: token.Token("ILLEGAL")
+															TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:87:13")
+															Token: token.Token(":")
+															Value: *ast.Ident{
+																NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:87:15")
+																Name: "string"
+															}
+															Attrs: []*ast.Attribute{
+															}
+														}
+													}
+													Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:88:4")
+												}
+											}
+											*ast.EmbedDecl{
+												Expr: *ast.StructLit{
+													Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:89:4")
+													Elts: []ast.Decl{
+														*ast.Field{
+															Label: *ast.ListLit{
+																Lbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:90:5")
+																Elts: []ast.Expr{
+																	*ast.Ident{
+																		NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:90:6")
+																		Name: "string"
+																	}
+																}
+																Rbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:90:12")
+															}
+															Optional: token.Pos("-")
+															Constraint: token.Token("ILLEGAL")
+															TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:90:13")
+															Token: token.Token(":")
+															Value: *ast.Ident{
+																NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:90:15")
+																Name: "string"
+															}
+															Attrs: []*ast.Attribute{
+															}
+														}
+													}
+													Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:91:4")
+												}
+											}
+										}
+										Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:92:3")
+									}
+									Attrs: []*ast.Attribute{
+									}
+									Comments: []*ast.CommentGroup{
+										*ast.CommentGroup{
+											Doc: true
+											Line: false
+											Position: 0
+											List: []*ast.Comment{
+												*ast.Comment{
+													Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:83:3")
+													Text: "// One or more labels that indicate a specific set of pods/VMs on"
+												}
+												*ast.Comment{
+													Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:84:3")
+													Text: "// which a policy should be applied."
+												}
+											}
+										}
+									}
+								}
+							}
+							Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:93:2")
+						}
+						Attrs: []*ast.Attribute{
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:97:2")
+							Name: "sha256"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:97:8")
+						Constraint: token.Token("?")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:97:9")
+						Token: token.Token(":")
+						Value: *ast.UnaryExpr{
+							OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:97:11")
+							Op: token.Token("=~")
+							X: *ast.BasicLit{
+								ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:97:13")
+								Kind: token.Token("STRING")
+								Value: "\"(^$|^[a-f0-9]{64}$)\""
+							}
+						}
+						Attrs: []*ast.Attribute{
+						}
+						Comments: []*ast.CommentGroup{
+							*ast.CommentGroup{
+								Doc: true
+								Line: false
+								Position: 0
+								List: []*ast.Comment{
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:95:2")
+										Text: "// SHA256 checksum that will be used to verify Wasm module or OCI"
+									}
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:96:2")
+										Text: "// container."
+									}
+								}
+							}
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:100:2")
+							Name: "targetRef"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:100:11")
+						Constraint: token.Token("?")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:100:12")
+						Token: token.Token(":")
+						Value: *ast.StructLit{
+							Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:100:14")
+							Elts: []ast.Decl{
+								*ast.Field{
+									Label: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:102:3")
+										Name: "group"
+									}
+									Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:102:8")
+									Constraint: token.Token("?")
+									TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:102:9")
+									Token: token.Token(":")
+									Value: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:102:11")
+										Name: "string"
+									}
+									Attrs: []*ast.Attribute{
+									}
+									Comments: []*ast.CommentGroup{
+										*ast.CommentGroup{
+											Doc: true
+											Line: false
+											Position: 0
+											List: []*ast.Comment{
+												*ast.Comment{
+													Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:101:3")
+													Text: "// group is the group of the target resource."
+												}
+											}
+										}
+									}
+								}
+								*ast.Field{
+									Label: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:105:3")
+										Name: "kind"
+									}
+									Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:105:7")
+									Constraint: token.Token("?")
+									TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:105:8")
+									Token: token.Token(":")
+									Value: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:105:10")
+										Name: "string"
+									}
+									Attrs: []*ast.Attribute{
+									}
+									Comments: []*ast.CommentGroup{
+										*ast.CommentGroup{
+											Doc: true
+											Line: false
+											Position: 0
+											List: []*ast.Comment{
+												*ast.Comment{
+													Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:104:3")
+													Text: "// kind is kind of the target resource."
+												}
+											}
+										}
+									}
+								}
+								*ast.Field{
+									Label: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:108:3")
+										Name: "name"
+									}
+									Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:108:7")
+									Constraint: token.Token("?")
+									TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:108:8")
+									Token: token.Token(":")
+									Value: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:108:10")
+										Name: "string"
+									}
+									Attrs: []*ast.Attribute{
+									}
+									Comments: []*ast.CommentGroup{
+										*ast.CommentGroup{
+											Doc: true
+											Line: false
+											Position: 0
+											List: []*ast.Comment{
+												*ast.Comment{
+													Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:107:3")
+													Text: "// name is the name of the target resource."
+												}
+											}
+										}
+									}
+								}
+								*ast.Field{
+									Label: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:111:3")
+										Name: "namespace"
+									}
+									Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:111:12")
+									Constraint: token.Token("?")
+									TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:111:13")
+									Token: token.Token(":")
+									Value: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:111:15")
+										Name: "string"
+									}
+									Attrs: []*ast.Attribute{
+									}
+									Comments: []*ast.CommentGroup{
+										*ast.CommentGroup{
+											Doc: true
+											Line: false
+											Position: 0
+											List: []*ast.Comment{
+												*ast.Comment{
+													Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:110:3")
+													Text: "// namespace is the namespace of the referent."
+												}
+											}
+										}
+									}
+								}
+							}
+							Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:112:2")
+						}
+						Attrs: []*ast.Attribute{
+						}
+						Comments: []*ast.CommentGroup{
+							*ast.CommentGroup{
+								Doc: true
+								Line: false
+								Position: 0
+								List: []*ast.Comment{
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:99:2")
+										Text: "// Optional."
+									}
+								}
+							}
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:2")
+							Name: "type"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:6")
+						Constraint: token.Token("?")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:7")
+						Token: token.Token(":")
+						Value: *ast.BinaryExpr{
+							X: *ast.ParenExpr{
+								Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:9")
+								X: *ast.BinaryExpr{
+									X: *ast.BinaryExpr{
+										X: *ast.BasicLit{
+											ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:10")
+											Kind: token.Token("STRING")
+											Value: "\"UNSPECIFIED_PLUGIN_TYPE\""
+										}
+										OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:36")
+										Op: token.Token("|")
+										Y: *ast.BasicLit{
+											ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:38")
+											Kind: token.Token("STRING")
+											Value: "\"HTTP\""
+										}
+									}
+									OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:45")
+									Op: token.Token("|")
+									Y: *ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:47")
+										Kind: token.Token("STRING")
+										Value: "\"NETWORK\""
+									}
+								}
+								Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:56")
+							}
+							OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:58")
+							Op: token.Token("&")
+							Y: *ast.ParenExpr{
+								Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:60")
+								X: *ast.BinaryExpr{
+									X: *ast.BinaryExpr{
+										X: *ast.BasicLit{
+											ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:61")
+											Kind: token.Token("STRING")
+											Value: "\"UNSPECIFIED_PLUGIN_TYPE\""
+										}
+										OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:87")
+										Op: token.Token("|")
+										Y: *ast.BasicLit{
+											ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:89")
+											Kind: token.Token("STRING")
+											Value: "\"HTTP\""
+										}
+									}
+									OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:96")
+									Op: token.Token("|")
+									Y: *ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:98")
+										Kind: token.Token("STRING")
+										Value: "\"NETWORK\""
+									}
+								}
+								Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:115:107")
+							}
+						}
+						Attrs: []*ast.Attribute{
+						}
+						Comments: []*ast.CommentGroup{
+							*ast.CommentGroup{
+								Doc: true
+								Line: false
+								Position: 0
+								List: []*ast.Comment{
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:114:2")
+										Text: "// Specifies the type of Wasm Extension to be used."
+									}
+								}
+							}
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:118:2")
+							Name: "url"
+						}
+						Optional: token.Pos("-")
+						Constraint: token.Token("ILLEGAL")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:118:5")
+						Token: token.Token(":")
+						Value: *ast.BinaryExpr{
+							X: *ast.CallExpr{
+								Fun: *ast.SelectorExpr{
+									X: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:118:20")
+										Name: "strings"
+									}
+									Sel: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:118:28")
+										Name: "MinRunes"
+									}
+								}
+								Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:118:36")
+								Args: []ast.Expr{
+									*ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:118:37")
+										Kind: token.Token("INT")
+										Value: "1"
+									}
+								}
+								Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:118:38")
+							}
+							OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:118:40")
+							Op: token.Token("&")
+							Y: *ast.CallExpr{
+								Fun: *ast.SelectorExpr{
+									X: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:118:42")
+										Name: "strings"
+									}
+									Sel: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:118:50")
+										Name: "MinRunes"
+									}
+								}
+								Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:118:58")
+								Args: []ast.Expr{
+									*ast.BasicLit{
+										ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:118:59")
+										Kind: token.Token("INT")
+										Value: "1"
+									}
+								}
+								Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:118:60")
+							}
+						}
+						Attrs: []*ast.Attribute{
+						}
+						Comments: []*ast.CommentGroup{
+							*ast.CommentGroup{
+								Doc: true
+								Line: false
+								Position: 0
+								List: []*ast.Comment{
+									*ast.Comment{
+										Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:117:2")
+										Text: "// URL of a Wasm module or OCI container."
+									}
+								}
+							}
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:119:2")
+							Name: "verificationKey"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:119:17")
+						Constraint: token.Token("?")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:119:18")
+						Token: token.Token(":")
+						Value: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:119:20")
+							Name: "string"
+						}
+						Attrs: []*ast.Attribute{
+						}
+					}
+					*ast.Field{
+						Label: *ast.Ident{
+							NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:120:2")
+							Name: "vmConfig"
+						}
+						Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:120:10")
+						Constraint: token.Token("?")
+						TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:120:11")
+						Token: token.Token(":")
+						Value: *ast.StructLit{
+							Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:120:13")
+							Elts: []ast.Decl{
+								*ast.Field{
+									Label: *ast.Ident{
+										NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:122:3")
+										Name: "env"
+									}
+									Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:122:6")
+									Constraint: token.Token("?")
+									TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:122:7")
+									Token: token.Token(":")
+									Value: *ast.BinaryExpr{
+										X: *ast.BinaryExpr{
+											X: *ast.BinaryExpr{
+												X: *ast.CallExpr{
+													Fun: *ast.SelectorExpr{
+														X: *ast.Ident{
+															NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:122:9")
+															Name: "list"
+														}
+														Sel: *ast.Ident{
+															NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:122:14")
+															Name: "MaxItems"
+														}
+													}
+													Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:122:22")
+													Args: []ast.Expr{
+														*ast.BasicLit{
+															ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:122:23")
+															Kind: token.Token("INT")
+															Value: "256"
+														}
+													}
+													Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:122:26")
+												}
+												OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:122:28")
+												Op: token.Token("&")
+												Y: *ast.ListLit{
+													Lbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:122:30")
+													Elts: []ast.Expr{
+														*ast.Ellipsis{
+															Ellipsis: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:122:31")
+															Type: *ast.StructLit{
+																Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:122:34")
+																Elts: []ast.Decl{
+																	*ast.Field{
+																		Label: *ast.Ident{
+																			NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:124:4")
+																			Name: "name"
+																		}
+																		Optional: token.Pos("-")
+																		Constraint: token.Token("ILLEGAL")
+																		TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:124:8")
+																		Token: token.Token(":")
+																		Value: *ast.BinaryExpr{
+																			X: *ast.CallExpr{
+																				Fun: *ast.SelectorExpr{
+																					X: *ast.Ident{
+																						NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:124:10")
+																						Name: "strings"
+																					}
+																					Sel: *ast.Ident{
+																						NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:124:18")
+																						Name: "MaxRunes"
+																					}
+																				}
+																				Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:124:26")
+																				Args: []ast.Expr{
+																					*ast.BasicLit{
+																						ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:124:27")
+																						Kind: token.Token("INT")
+																						Value: "256"
+																					}
+																				}
+																				Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:124:30")
+																			}
+																			OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:124:32")
+																			Op: token.Token("&")
+																			Y: *ast.CallExpr{
+																				Fun: *ast.SelectorExpr{
+																					X: *ast.Ident{
+																						NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:124:34")
+																						Name: "strings"
+																					}
+																					Sel: *ast.Ident{
+																						NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:124:42")
+																						Name: "MinRunes"
+																					}
+																				}
+																				Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:124:50")
+																				Args: []ast.Expr{
+																					*ast.BasicLit{
+																						ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:124:51")
+																						Kind: token.Token("INT")
+																						Value: "1"
+																					}
+																				}
+																				Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:124:52")
+																			}
+																		}
+																		Attrs: []*ast.Attribute{
+																		}
+																		Comments: []*ast.CommentGroup{
+																			*ast.CommentGroup{
+																				Doc: true
+																				Line: false
+																				Position: 0
+																				List: []*ast.Comment{
+																					*ast.Comment{
+																						Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:123:4")
+																						Text: "// Name of the environment variable."
+																					}
+																				}
+																			}
+																		}
+																	}
+																	*ast.Field{
+																		Label: *ast.Ident{
+																			NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:127:4")
+																			Name: "value"
+																		}
+																		Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:127:9")
+																		Constraint: token.Token("?")
+																		TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:127:10")
+																		Token: token.Token(":")
+																		Value: *ast.CallExpr{
+																			Fun: *ast.SelectorExpr{
+																				X: *ast.Ident{
+																					NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:127:12")
+																					Name: "strings"
+																				}
+																				Sel: *ast.Ident{
+																					NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:127:20")
+																					Name: "MaxRunes"
+																				}
+																			}
+																			Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:127:28")
+																			Args: []ast.Expr{
+																				*ast.BasicLit{
+																					ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:127:29")
+																					Kind: token.Token("INT")
+																					Value: "2048"
+																				}
+																			}
+																			Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:127:33")
+																		}
+																		Attrs: []*ast.Attribute{
+																		}
+																		Comments: []*ast.CommentGroup{
+																			*ast.CommentGroup{
+																				Doc: true
+																				Line: false
+																				Position: 0
+																				List: []*ast.Comment{
+																					*ast.Comment{
+																						Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:126:4")
+																						Text: "// Value for the environment variable."
+																					}
+																				}
+																			}
+																		}
+																	}
+																	*ast.Field{
+																		Label: *ast.Ident{
+																			NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:130:4")
+																			Name: "valueFrom"
+																		}
+																		Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:130:13")
+																		Constraint: token.Token("?")
+																		TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:130:14")
+																		Token: token.Token(":")
+																		Value: *ast.BinaryExpr{
+																			X: *ast.BasicLit{
+																				ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:130:16")
+																				Kind: token.Token("STRING")
+																				Value: "\"INLINE\""
+																			}
+																			OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:130:25")
+																			Op: token.Token("|")
+																			Y: *ast.BasicLit{
+																				ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:130:27")
+																				Kind: token.Token("STRING")
+																				Value: "\"HOST\""
+																			}
+																		}
+																		Attrs: []*ast.Attribute{
+																		}
+																		Comments: []*ast.CommentGroup{
+																			*ast.CommentGroup{
+																				Doc: true
+																				Line: false
+																				Position: 0
+																				List: []*ast.Comment{
+																					*ast.Comment{
+																						Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:129:4")
+																						Text: "// Source for the environment variable's value."
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+																Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:131:3")
+															}
+														}
+													}
+													Rbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:131:4")
+												}
+											}
+											OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:131:6")
+											Op: token.Token("&")
+											Y: *ast.CallExpr{
+												Fun: *ast.SelectorExpr{
+													X: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:131:8")
+														Name: "list"
+													}
+													Sel: *ast.Ident{
+														NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:131:13")
+														Name: "MaxItems"
+													}
+												}
+												Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:131:21")
+												Args: []ast.Expr{
+													*ast.BasicLit{
+														ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:131:22")
+														Kind: token.Token("INT")
+														Value: "256"
+													}
+												}
+												Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:131:25")
+											}
+										}
+										OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:131:27")
+										Op: token.Token("&")
+										Y: *ast.ListLit{
+											Lbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:131:29")
+											Elts: []ast.Expr{
+												*ast.Ellipsis{
+													Ellipsis: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:131:30")
+													Type: *ast.StructLit{
+														Lbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:131:33")
+														Elts: []ast.Decl{
+															*ast.Field{
+																Label: *ast.Ident{
+																	NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:133:4")
+																	Name: "name"
+																}
+																Optional: token.Pos("-")
+																Constraint: token.Token("ILLEGAL")
+																TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:133:8")
+																Token: token.Token(":")
+																Value: *ast.BinaryExpr{
+																	X: *ast.CallExpr{
+																		Fun: *ast.SelectorExpr{
+																			X: *ast.Ident{
+																				NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:133:10")
+																				Name: "strings"
+																			}
+																			Sel: *ast.Ident{
+																				NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:133:18")
+																				Name: "MaxRunes"
+																			}
+																		}
+																		Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:133:26")
+																		Args: []ast.Expr{
+																			*ast.BasicLit{
+																				ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:133:27")
+																				Kind: token.Token("INT")
+																				Value: "256"
+																			}
+																		}
+																		Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:133:30")
+																	}
+																	OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:133:32")
+																	Op: token.Token("&")
+																	Y: *ast.CallExpr{
+																		Fun: *ast.SelectorExpr{
+																			X: *ast.Ident{
+																				NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:133:34")
+																				Name: "strings"
+																			}
+																			Sel: *ast.Ident{
+																				NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:133:42")
+																				Name: "MinRunes"
+																			}
+																		}
+																		Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:133:50")
+																		Args: []ast.Expr{
+																			*ast.BasicLit{
+																				ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:133:51")
+																				Kind: token.Token("INT")
+																				Value: "1"
+																			}
+																		}
+																		Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:133:52")
+																	}
+																}
+																Attrs: []*ast.Attribute{
+																}
+																Comments: []*ast.CommentGroup{
+																	*ast.CommentGroup{
+																		Doc: true
+																		Line: false
+																		Position: 0
+																		List: []*ast.Comment{
+																			*ast.Comment{
+																				Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:132:4")
+																				Text: "// Name of the environment variable."
+																			}
+																		}
+																	}
+																}
+															}
+															*ast.Field{
+																Label: *ast.Ident{
+																	NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:136:4")
+																	Name: "value"
+																}
+																Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:136:9")
+																Constraint: token.Token("?")
+																TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:136:10")
+																Token: token.Token(":")
+																Value: *ast.CallExpr{
+																	Fun: *ast.SelectorExpr{
+																		X: *ast.Ident{
+																			NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:136:12")
+																			Name: "strings"
+																		}
+																		Sel: *ast.Ident{
+																			NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:136:20")
+																			Name: "MaxRunes"
+																		}
+																	}
+																	Lparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:136:28")
+																	Args: []ast.Expr{
+																		*ast.BasicLit{
+																			ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:136:29")
+																			Kind: token.Token("INT")
+																			Value: "2048"
+																		}
+																	}
+																	Rparen: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:136:33")
+																}
+																Attrs: []*ast.Attribute{
+																}
+																Comments: []*ast.CommentGroup{
+																	*ast.CommentGroup{
+																		Doc: true
+																		Line: false
+																		Position: 0
+																		List: []*ast.Comment{
+																			*ast.Comment{
+																				Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:135:4")
+																				Text: "// Value for the environment variable."
+																			}
+																		}
+																	}
+																}
+															}
+															*ast.Field{
+																Label: *ast.Ident{
+																	NamePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:139:4")
+																	Name: "valueFrom"
+																}
+																Optional: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:139:13")
+																Constraint: token.Token("?")
+																TokenPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:139:14")
+																Token: token.Token(":")
+																Value: *ast.BinaryExpr{
+																	X: *ast.BasicLit{
+																		ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:139:16")
+																		Kind: token.Token("STRING")
+																		Value: "\"INLINE\""
+																	}
+																	OpPos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:139:25")
+																	Op: token.Token("|")
+																	Y: *ast.BasicLit{
+																		ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:139:27")
+																		Kind: token.Token("STRING")
+																		Value: "\"HOST\""
+																	}
+																}
+																Attrs: []*ast.Attribute{
+																}
+																Comments: []*ast.CommentGroup{
+																	*ast.CommentGroup{
+																		Doc: true
+																		Line: false
+																		Position: 0
+																		List: []*ast.Comment{
+																			*ast.Comment{
+																				Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:138:4")
+																				Text: "// Source for the environment variable's value."
+																			}
+																		}
+																	}
+																}
+															}
+														}
+														Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:140:3")
+													}
+												}
+											}
+											Rbrack: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:140:4")
+										}
+									}
+									Attrs: []*ast.Attribute{
+									}
+									Comments: []*ast.CommentGroup{
+										*ast.CommentGroup{
+											Doc: true
+											Line: false
+											Position: 0
+											List: []*ast.Comment{
+												*ast.Comment{
+													Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:121:3")
+													Text: "// Specifies environment variables to be injected to this VM."
+												}
+											}
+										}
+									}
+								}
+							}
+							Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:141:2")
+						}
+						Attrs: []*ast.Attribute{
+						}
+					}
+				}
+				Rbrace: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:142:1")
+			}
+			Attrs: []*ast.Attribute{
+			}
+			Comments: []*ast.CommentGroup{
+				*ast.CommentGroup{
+					Doc: true
+					Line: false
+					Position: 0
+					List: []*ast.Comment{
+						*ast.Comment{
+							Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:34:1")
+							Text: "// Extend the functionality provided by the Istio proxy through"
+						}
+						*ast.Comment{
+							Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:35:1")
+							Text: "// WebAssembly filters. See more details at:"
+						}
+						*ast.Comment{
+							Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:36:1")
+							Text: "// https://istio.io/docs/reference/config/proxy_extensions/wasm-plugin.html"
+						}
+					}
+				}
+			}
+		}
+	}
+	Imports: []*ast.ImportSpec{
+		*ast.ImportSpec{
+			Name: nil
+			Path: *ast.BasicLit{
+				ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:6:2")
+				Kind: token.Token("STRING")
+				Value: "\"strings\""
+			}
+			EndPos: token.Pos("-")
+		}
+		*ast.ImportSpec{
+			Name: nil
+			Path: *ast.BasicLit{
+				ValuePos: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:7:2")
+				Kind: token.Token("STRING")
+				Value: "\"list\""
+			}
+			EndPos: token.Pos("-")
+		}
+	}
+	Comments: []*ast.CommentGroup{
+		*ast.CommentGroup{
+			Doc: false
+			Line: false
+			Position: 0
+			List: []*ast.Comment{
+				*ast.Comment{
+					Slash: token.Pos("cue.mod/gen/extensions.istio.io/wasmplugin/v1alpha1/types_gen.cue:1:1")
+					Text: "// cue get crd /Users/jstall/Downloads/crd-all.gen.yaml"
+				}
+			}
+		}
+	}
+}
